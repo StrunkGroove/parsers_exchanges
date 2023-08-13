@@ -16,7 +16,7 @@ async function fetchAdsForCrypto(cryptoCurrency, buyOrSell, payTypes) {
   userId:"",
   tokenId: cryptoCurrency,
   currencyId: "RUB",
-  payment: ["75"],
+  payment: payTypes,
   side: buyOrSell,
   size: "10",
   page: "1",
