@@ -42,7 +42,7 @@ async function updateAdsInDatabase(data, filename) {
     dataWithNumber = data.map((currentItem, index) => {
       return {
         ...currentItem,
-        number: index,
+        number: index + 1000,
         orders_q: Math.round(currentItem.orders_q),
         order_p: Math.ceil(currentItem.order_p),
         lim_min: Math.round(currentItem.lim_min),
@@ -73,7 +73,7 @@ async function updateAdsInDatabase(data, filename) {
       WHERE "number" >= $1 AND "number" < 2000;
     `;
 
-    await client.query(zeroQuery, [data.length]);
+    await client.query(zeroQuery, [data.length + 1000]);
 
   } catch (error) {
     console.log(error, dataWithNumber[0]);
