@@ -24,7 +24,7 @@ async function fetchAdsForCrypto(cryptoCurrency, buyOrSell) {
   }
 
   const url = `https://bitpapa.com/api/v1/partners/ads/search?sort=${sort}&crypto_currency_code=${cryptoCurrency}&currency_code=RUB&limit=100&page=1&type=${buyOrSell}`;
-  const token = 'H9F5SGTbn8UdiKsyzZPP';
+  const token = 'jjAn5tHVo9TcpU8bY3aA';
   const headers = {
     Accept: 'application/json',
     'X-Access-Token': token,};
@@ -95,7 +95,7 @@ async function fetchAdsForCryptoCombinations(cryptoCurrencyList, buyOrSellList) 
   return dataList.flat();
 }
 
-const cryptoCurrencyList = ['USDT', 'XMR'];
+const cryptoCurrencyList = ['ETH', 'BTC', 'TON'];
 // const cryptoCurrencyList = ['ETH', 'BTC'];
 const buyOrSellList = ['buy', 'sell'];
 
