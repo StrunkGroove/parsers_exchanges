@@ -42,7 +42,7 @@ async function updateAdsInDatabase(data, filename) {
     dataWithNumber = data.map((currentItem, index) => {
       return {
         ...currentItem,
-        number: index,
+        number: index + 1,
         orders_q: Math.round(currentItem.orders_q),
         order_p: Math.ceil(currentItem.order_p),
         lim_min: Math.round(currentItem.lim_min),
