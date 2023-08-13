@@ -1,2 +1,2 @@
-chrome-linux64
-node_modules
+./dependencies/chrome-linux64
+./dependencies/node_modules
