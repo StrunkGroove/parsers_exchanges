@@ -92,7 +92,7 @@ async function fetchAdsForCryptoCombinations(cryptoCurrencyList, buyOrSellList, 
 const buyOrSellList = ['BUY', 'SELL'];
 const payTypesList = [['TinkoffNew'], ['RosBankNew'], ['QIWI'], ['MTSBank'], ['RaiffeisenBank'], ['YandexMoneyNew']];
 
-const cryptoCurrencyList = ['USDT', 'BTC', 'ETH'];
+const cryptoCurrencyList = ['BUSD', 'BNB', 'RUB', 'SHIB'];
 
 async function fetchAndPrintAds() {
   const allAds = await fetchAdsForCryptoCombinations(cryptoCurrencyList, buyOrSellList, payTypesList);
