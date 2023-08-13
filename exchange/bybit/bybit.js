@@ -91,7 +91,7 @@ async function fetchAdsForCryptoCombinations(cryptoCurrencyList, buyOrSellList, 
 
 // 75 - Tinkoff, 185 - Ros, 44 - MTS, 62 - QIWI, 274 - ЮMoney, 64 - Raiff
 const payTypesList = [["62"], ["274"], ["64"], ["75"], ["185"], ["44"]];
-const cryptoCurrencyList = ['ETH', 'USDC'];
+const cryptoCurrencyList = ['USDT', 'BTC'];
 const buyOrSellList = ["1", "0"];
 
 async function fetchAndPrintAds() {
