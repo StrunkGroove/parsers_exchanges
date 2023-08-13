@@ -99,7 +99,7 @@ async function fetchAdsForCryptoCombinations(cryptoCurrencyList, buyOrSellList, 
 
 // 2 - USDT, 4 - USDD, 1 - BTC, 22 - TRX, 3 - ETH, 5 - EOS, 7 - XRP, 8 - LTC
 // const cryptoCurrencyList = [2, 4, 1, 22, 3, 5, 7, 8];
-const cryptoCurrencyList = [2, 4, 1, 22];
+const cryptoCurrencyList = [3, 5, 7, 8, 62];
 
 const buyOrSellList = ['buy', 'sell'];
 
