@@ -14,17 +14,17 @@ const { beribit } = require('./exchange/beribit/beribit.js');
 
 async function main() {
   await Promise.all([
-    run(beribit, 'Beribit', 31000),
+    // run(beribit, 'Beribit', 31000),
     run(binance, 'Binance', 16000),
     run(bybit, 'Bybit', 31000),
-    run(gateio, 'Gateio', 5000),
-    run(hodlhodl, 'HodlHodl', 31000),
+    // run(gateio, 'Gateio', 5000),
+    // run(hodlhodl, 'HodlHodl', 31000),
     run(huobi, 'Huobi', 31000),
-    run(kucoin, 'Kucoin', 2000),
-    run(mexc, 'Mexc', 2000),
-    run(okx, 'Okx', 20000),
-    run(totalcoinio, 'Totalcoinio', 10000),
-    run(garantex, 'Garantex', 20000),
+    // run(kucoin, 'Kucoin', 2000),
+    // run(mexc, 'Mexc', 2000),
+    // run(okx, 'Okx', 20000),
+    // run(totalcoinio, 'Totalcoinio', 10000),
+    // run(garantex, 'Garantex', 20000),
     run(bitpapa, 'Bitpapa', 60000),
 
     // run(bitget, 'Bitget', 31000),
