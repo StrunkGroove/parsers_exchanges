@@ -70,10 +70,10 @@ async function updateAdsInDatabase(data, filename) {
         "fiat" = 0,
         "adv_no" = 0,
         "available" = 0
-      WHERE "number" >= $1 AND "number" < 2000;
+      WHERE "number" >= $1 AND "number" < 1000;
     `;
 
-    await client.query(zeroQuery, [data.length]);
+    await client.query(zeroQuery, [data.length + 1]);
 
   } catch (error) {
     console.log(error, dataWithNumber[0]);
