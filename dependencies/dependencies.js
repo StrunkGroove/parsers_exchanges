@@ -12,6 +12,8 @@ const pgp = require('pg-promise')();
 const { spawn } = require('child_process');
 const { exec } = require('child_process');
 const { stdin: input, stdout: output } = require('process');
+const puppeteer = require('puppeteer-core');
+const cheerio = require('cheerio');
 
 module.exports = {
   WebSocket,
@@ -28,5 +30,7 @@ module.exports = {
   spawn,
   exec,
   input,
-  output
+  output,
+  puppeteer,
+  cheerio
 };
