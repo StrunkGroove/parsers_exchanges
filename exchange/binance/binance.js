@@ -103,22 +103,22 @@ async function fetchAndPrintAds() {
 
 module.exports = { binance: fetchAndPrintAds };
 
-async function main() {
-  for (;;) {
-    try {
-      const startTime = new Date();
-      const length = await fetchAndPrintAds();
-      const endTime = new Date();
-      const executionTime = endTime - startTime;
+// async function main() {
+//   for (;;) {
+//     try {
+//       const startTime = new Date();
+//       const length = await fetchAndPrintAds();
+//       const endTime = new Date();
+//       const executionTime = endTime - startTime;
 
-      const currentTime = new Date();
-      console.log(`Current Time: ${currentTime.toLocaleString()}, Execution Time: ${executionTime} ms, Number of Rows: ${length}`);
+//       const currentTime = new Date();
+//       console.log(`Current Time: ${currentTime.toLocaleString()}, Execution Time: ${executionTime} ms, Number of Rows: ${length}`);
 
-      await new Promise((resolve) => setTimeout(resolve, 16000));
-    } catch {
-      await new Promise((resolve) => setTimeout(resolve, 30000));
-    }
-  }
-}
+//       await new Promise((resolve) => setTimeout(resolve, 16000));
+//     } catch {
+//       await new Promise((resolve) => setTimeout(resolve, 30000));
+//     }
+//   }
+// }
 
-main();
+// main();
