@@ -35,7 +35,7 @@ async function fetchAdsForCrypto(coinId, buyOrSell) {
     for (let i = 0; i < dataArray.length; i++) {
       const name = dataArray[i]['nickName'];
       const orders_q = parseFloat(dataArray[i]['completedOrderQuantity']);
-      const order_p = parseFloat(dataArray[i]['completedRate']);
+      const order_p = parseFloat(dataArray[i]['completedRate']) * 100;
 
       // const payments = updatePaymentMethods(dataArray[i]['paymentMethods']);
       const payments = updatePaymentMethods(dataArray[i]['paymentMethods']);
